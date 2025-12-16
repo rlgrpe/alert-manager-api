@@ -1,0 +1,36 @@
+[package]
+name = "alert-manager-api"
+version = "0.1.0"
+edition = "2021"
+description = "Alertmanager API client for pushing alerts"
+license = "MIT"
+keywords = ["alertmanager", "prometheus", "monitoring", "alerts"]
+categories = ["api-bindings", "web-programming"]
+
+[dependencies]
+# Async runtime
+tokio = { version = "1", features = ["rt", "macros"] }
+
+# HTTP client
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+reqwest-middleware = { version = "0.4", features = ["json"] }
+
+# Serialization
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# URL handling
+url = { version = "2", features = ["serde"] }
+
+# Date/time
+chrono = { version = "0.4", features = ["serde"] }
+
+# Error handling
+thiserror = "2"
+
+# Tracing
+tracing = "0.1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+wiremock = "0.6"
