@@ -1,18 +1,22 @@
 [package]
 name = "alert-manager-api"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "Alertmanager API client for pushing alerts"
 license = "MIT"
 keywords = ["alertmanager", "prometheus", "monitoring", "alerts"]
 categories = ["api-bindings", "web-programming"]
 
+[features]
+default = []
+rustls = ["reqwest/rustls-tls"]
+
 [dependencies]
 # Async runtime
 tokio = { version = "1", features = ["rt", "macros"] }
 
 # HTTP client
-reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls"] }
+reqwest = { version = "0.12", default-features = false, features = ["json"] }
 reqwest-middleware = { version = "0.4", features = ["json"] }
 
 # Serialization
