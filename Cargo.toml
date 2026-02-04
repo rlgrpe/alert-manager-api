@@ -4,6 +4,8 @@ version = "0.1.2"
 edition = "2021"
 description = "Alertmanager API client for pushing alerts"
 license = "MIT"
+repository = "https://github.com/rlgrpe/alert-manager-api"
+homepage = "https://github.com/rlgrpe/alert-manager-api"
 keywords = ["alertmanager", "prometheus", "monitoring", "alerts"]
 categories = ["api-bindings", "web-programming"]
 
@@ -39,3 +41,4 @@ tracing = "0.1"
 [dev-dependencies]
 tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
 wiremock = "0.6"
+reqwest-retry = "0.7"
