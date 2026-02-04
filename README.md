@@ -1,8 +1,5 @@
 # alert-manager-api
 
-[![CI](https://github.com/rlgrpe/alert-manager-api/actions/workflows/ci.yml/badge.svg)](https://github.com/rlgrpe/alert-manager-api/actions/workflows/ci.yml)
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-
 A Rust async client library for [Prometheus Alertmanager](https://prometheus.io/docs/alerting/latest/alertmanager/).
 
 ## Features
@@ -217,13 +214,9 @@ Run examples with:
 cargo run --example basic
 ```
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
 ## License
 
-MIT OR Apache-2.0
+MIT
 
 ---
 
