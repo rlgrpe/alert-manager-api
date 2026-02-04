@@ -19,14 +19,14 @@ Add to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-alert-manager-api = { git = "https://github.com/rlgrpe/alert-manager-api", tag = "v0.1.2" }
+alert-manager-api = { git = "https://github.com/rlgrpe/alert-manager-api.git", tag = "v0.1.2" }
 ```
 
 For rustls instead of native-tls:
 
 ```toml
 [dependencies]
-alert-manager-api = { git = "https://github.com/rlgrpe/alert-manager-api", tag = "v0.1.2", default-features = false, features = ["rustls-tls"] }
+alert-manager-api = { git = "https://github.com/rlgrpe/alert-manager-api.git", tag = "v0.1.2", default-features = false, features = ["rustls-tls"] }
 ```
 
 ## Quick Start
