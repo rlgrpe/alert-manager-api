@@ -7,7 +7,7 @@
 //! This example requires additional dependencies:
 //! ```toml
 //! [dev-dependencies]
-//! reqwest-retry = "0.7"
+//! reqwest-retry = "0.9.1"
 //! ```
 
 use alert_manager_api::{Alert, AlertSeverity, AlertmanagerClient, AlertmanagerError};
